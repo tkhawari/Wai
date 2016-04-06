@@ -43,6 +43,7 @@
 			isa = PBXGroup;
 			children = (
 				8453784C1CB500600041F884 /* User.swift */,
+				845378531CB50FC40041F884 /* Account.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -158,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3F279111CB4EB1800DB3A09 /* ViewController.swift in Sources */,
+				845378541CB50FC40041F884 /* Account.swift in Sources */,
 				B3F2790F1CB4EB1800DB3A09 /* AppDelegate.swift in Sources */,
 				8453784D1CB500600041F884 /* User.swift in Sources */,
 				B3BCACDA1CB5246C00A2BA1B /* RegisterViewController.swift in Sources */,
