@@ -32,6 +32,7 @@ class Account{
         // need to assign user once information is given.
     }
     
+    
 
     func validateLogin(username : String, password : String) -> Bool{
         return self.username == username && self.password == password
