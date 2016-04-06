@@ -9,7 +9,7 @@
 // Need to implement
 import UIKit
 
-var accounts : [Account] = [Account(id: 1,username: "wallid",password: "password",email: "email",type: AccountType.USER),Account(id: 2,username: "wallid1",password: "password",email: "email",type: AccountType.USER),Account(id: 3,username: "wallid2",password: "password",email: "email",type: AccountType.USER)]
+var accounts  = [Account(id: 1,username: "wallid",password: "password",email: "email",type: AccountType.USER),Account(id: 2,username: "wallid1",password: "password",email: "email",type: AccountType.USER),Account(id: 3,username: "wallid2",password: "password",email: "email",type: AccountType.USER)]
 
 class ViewController: UIViewController ,  UITextFieldDelegate{
 
