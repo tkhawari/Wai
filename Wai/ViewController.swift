@@ -22,6 +22,8 @@ class ViewController: UIViewController ,  UITextFieldDelegate{
         super.viewDidLoad()
         self.nameTextField.delegate = self
         self.passwordTextField.delegate = self
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
