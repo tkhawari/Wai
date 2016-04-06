@@ -51,6 +51,9 @@
                                         <rect key="frame" x="0.0" y="66" width="200" height="30"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="Sign in"/>
+                                        <connections>
+                                            <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aSv-EH-3e3"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -71,6 +74,10 @@
                             <constraint firstItem="bfI-zW-gDB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qTc-D8-1Cs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="kk3-gI-FJt" id="GNr-au-Z7K"/>
+                        <outlet property="passwordTextField" destination="xSR-oB-yTu" id="BSW-gY-WfE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
