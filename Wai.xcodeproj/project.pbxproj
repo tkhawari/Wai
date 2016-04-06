@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8453784D1CB500600041F884 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453784C1CB500600041F884 /* User.swift */; };
 		B3F2790F1CB4EB1800DB3A09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F2790E1CB4EB1800DB3A09 /* AppDelegate.swift */; };
 		B3F279111CB4EB1800DB3A09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F279101CB4EB1800DB3A09 /* ViewController.swift */; };
 		B3F279141CB4EB1800DB3A09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3F279121CB4EB1800DB3A09 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8453784C1CB500600041F884 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B3F2790B1CB4EB1800DB3A09 /* Wai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F2790E1CB4EB1800DB3A09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3F279101CB4EB1800DB3A09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		845378501CB5079D0041F884 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8453784C1CB500600041F884 /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		845378521CB507C90041F884 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B3F279101CB4EB1800DB3A09 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		B3F279021CB4EB1800DB3A09 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +72,9 @@
 		B3F2790D1CB4EB1800DB3A09 /* Wai */ = {
 			isa = PBXGroup;
 			children = (
+				845378521CB507C90041F884 /* Controller */,
+				845378501CB5079D0041F884 /* Model */,
 				B3F2790E1CB4EB1800DB3A09 /* AppDelegate.swift */,
-				B3F279101CB4EB1800DB3A09 /* ViewController.swift */,
 				B3F279121CB4EB1800DB3A09 /* Main.storyboard */,
 				B3F279151CB4EB1800DB3A09 /* Assets.xcassets */,
 				B3F279171CB4EB1800DB3A09 /* LaunchScreen.storyboard */,
@@ -137,6 +156,7 @@
 			files = (
 				B3F279111CB4EB1800DB3A09 /* ViewController.swift in Sources */,
 				B3F2790F1CB4EB1800DB3A09 /* AppDelegate.swift in Sources */,
+				8453784D1CB500600041F884 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +306,7 @@
 				B3F2791F1CB4EB1800DB3A09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
