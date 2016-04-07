@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8453784D1CB500600041F884 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453784C1CB500600041F884 /* User.swift */; };
+		845378561CB527040041F884 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845378551CB527040041F884 /* Account.swift */; };
 		B3BCACDA1CB5246C00A2BA1B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BCACD91CB5246C00A2BA1B /* RegisterViewController.swift */; };
 		B3F2790F1CB4EB1800DB3A09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F2790E1CB4EB1800DB3A09 /* AppDelegate.swift */; };
 		B3F279111CB4EB1800DB3A09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F279101CB4EB1800DB3A09 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		8453784C1CB500600041F884 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		845378551CB527040041F884 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		B3BCACD91CB5246C00A2BA1B /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		B3F2790B1CB4EB1800DB3A09 /* Wai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3F2790E1CB4EB1800DB3A09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,8 +44,8 @@
 		845378501CB5079D0041F884 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				845378551CB527040041F884 /* Account.swift */,
 				8453784C1CB500600041F884 /* User.swift */,
-				845378531CB50FC40041F884 /* Account.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -119,6 +121,7 @@
 				TargetAttributes = {
 					B3F2790A1CB4EB1800DB3A09 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 6JSN5DBCNF;
 					};
 				};
 			};
@@ -158,8 +161,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845378561CB527040041F884 /* Account.swift in Sources */,
 				B3F279111CB4EB1800DB3A09 /* ViewController.swift in Sources */,
-				845378541CB50FC40041F884 /* Account.swift in Sources */,
 				B3F2790F1CB4EB1800DB3A09 /* AppDelegate.swift in Sources */,
 				8453784D1CB500600041F884 /* User.swift in Sources */,
 				B3BCACDA1CB5246C00A2BA1B /* RegisterViewController.swift in Sources */,
@@ -275,10 +278,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Wai/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.Wai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -286,10 +292,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Wai/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.self.Wai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
