@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -172,40 +172,123 @@
                         <viewControllerLayoutGuide type="top" id="JLf-s0-xFT"/>
                         <viewControllerLayoutGuide type="bottom" id="ZaV-4b-LFj"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="I5X-Y7-2lt">
+                    <view key="view" tag="10" contentMode="scaleToFill" id="I5X-Y7-2lt">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="diq-U5-CuG">
-                                <rect key="frame" x="125" y="184" width="350" height="29"/>
-                                <segments>
-                                    <segment title="Men"/>
-                                    <segment title="Women"/>
-                                    <segment title="Everyone"/>
-                                </segments>
-                            </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Interest" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tnt-dz-Pgm">
-                                <rect key="frame" x="191" y="147" width="218" height="29"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Zg4-YL-Qhe">
+                                <rect key="frame" x="30" y="184" width="540" height="142"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tnt-dz-Pgm">
+                                        <rect key="frame" x="241" y="0.0" width="59" height="28"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="diq-U5-CuG">
+                                        <rect key="frame" x="0.0" y="38" width="540" height="29"/>
+                                        <segments>
+                                            <segment title="Men"/>
+                                            <segment title="Women"/>
+                                            <segment title="Everyone"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKm-ua-Szo">
+                                        <rect key="frame" x="242" y="76" width="57" height="28"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SwG-7I-Jmo">
+                                        <rect key="frame" x="0.0" y="114" width="540" height="29"/>
+                                        <segments>
+                                            <segment title="Male"/>
+                                            <segment title="Female"/>
+                                            <segment title="Other"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="SwG-7I-Jmo" secondAttribute="trailing" id="0DV-AG-jL7"/>
+                                    <constraint firstAttribute="trailing" secondItem="diq-U5-CuG" secondAttribute="trailing" id="0hW-sk-KOH"/>
+                                    <constraint firstItem="diq-U5-CuG" firstAttribute="leading" secondItem="Zg4-YL-Qhe" secondAttribute="leading" id="3Da-3p-qWL"/>
+                                    <constraint firstItem="SwG-7I-Jmo" firstAttribute="leading" secondItem="Zg4-YL-Qhe" secondAttribute="leading" id="7yy-Kp-bF4"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiw-hO-tL9">
+                                <rect key="frame" x="268" y="64" width="65" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gender" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKm-ua-Szo">
-                                <rect key="frame" x="191" y="227" width="218" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SwG-7I-Jmo">
-                                <rect key="frame" x="125" y="262" width="350" height="29"/>
-                                <segments>
-                                    <segment title="Male"/>
-                                    <segment title="Female"/>
-                                </segments>
-                            </segmentedControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qqn-vT-DfH">
+                                <rect key="frame" x="30" y="132" width="540" height="29"/>
+                                <subviews>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="31" translatesAutoresizingMaskIntoConstraints="NO" id="AmG-BO-FKX">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="29"/>
+                                    </stepper>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="12" translatesAutoresizingMaskIntoConstraints="NO" id="Kcy-SC-yaZ">
+                                        <rect key="frame" x="185" y="0.0" width="94" height="29"/>
+                                    </stepper>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2000" minimumValue="1850" maximumValue="3000" translatesAutoresizingMaskIntoConstraints="NO" id="0w7-ch-k0y">
+                                        <rect key="frame" x="370" y="0.0" width="94" height="29"/>
+                                    </stepper>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="lGx-BN-HHh">
+                                <rect key="frame" x="40" y="95" width="520" height="21"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GH6-fs-g4C">
+                                        <rect key="frame" x="0.0" y="0.0" width="104" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCW-yD-DkM">
+                                        <rect key="frame" x="104" y="0.0" width="104" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Month" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylQ-ME-y6G">
+                                        <rect key="frame" x="208" y="0.0" width="104" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ff-3w-vUs">
+                                        <rect key="frame" x="312" y="0.0" width="104" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diH-TL-TFe">
+                                        <rect key="frame" x="416" y="0.0" width="104" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" red="1" green="0.48267209179999998" blue="0.47732161010000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lGx-BN-HHh" firstAttribute="centerX" secondItem="I5X-Y7-2lt" secondAttribute="centerX" id="3VI-ac-uOs"/>
+                            <constraint firstItem="oiw-hO-tL9" firstAttribute="centerX" secondItem="I5X-Y7-2lt" secondAttribute="centerX" id="6il-Yb-mUz"/>
+                            <constraint firstItem="Zg4-YL-Qhe" firstAttribute="leading" secondItem="I5X-Y7-2lt" secondAttribute="leadingMargin" constant="10" id="7vK-LP-O74"/>
+                            <constraint firstItem="qqn-vT-DfH" firstAttribute="leading" secondItem="I5X-Y7-2lt" secondAttribute="leadingMargin" constant="10" id="PVz-Pc-26J"/>
+                            <constraint firstItem="lGx-BN-HHh" firstAttribute="top" secondItem="oiw-hO-tL9" secondAttribute="bottom" constant="10" id="Qng-gn-Rvj"/>
+                            <constraint firstItem="Zg4-YL-Qhe" firstAttribute="centerX" secondItem="I5X-Y7-2lt" secondAttribute="centerX" id="TaB-3U-yFu"/>
+                            <constraint firstItem="qqn-vT-DfH" firstAttribute="centerX" secondItem="I5X-Y7-2lt" secondAttribute="centerX" id="WDJ-kh-9kz"/>
+                            <constraint firstItem="lGx-BN-HHh" firstAttribute="leading" secondItem="I5X-Y7-2lt" secondAttribute="leadingMargin" constant="20" id="XPF-1X-Bco"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qqn-vT-DfH" secondAttribute="trailing" constant="10" id="clB-Qv-7AD"/>
+                            <constraint firstItem="qqn-vT-DfH" firstAttribute="top" secondItem="lGx-BN-HHh" secondAttribute="bottom" constant="16" id="f8A-lO-qdA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lGx-BN-HHh" secondAttribute="trailing" constant="20" id="i7w-Ik-0yC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zg4-YL-Qhe" secondAttribute="trailing" constant="10" id="mdm-om-zKi"/>
+                            <constraint firstItem="oiw-hO-tL9" firstAttribute="top" secondItem="JLf-s0-xFT" secondAttribute="bottom" constant="44" id="onx-Rc-F4Y"/>
+                            <constraint firstItem="Zg4-YL-Qhe" firstAttribute="top" secondItem="qqn-vT-DfH" secondAttribute="bottom" constant="23" id="xjW-V5-SYe"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BRy-R3-b9b" userLabel="First Responder" sceneMemberID="firstResponder"/>
