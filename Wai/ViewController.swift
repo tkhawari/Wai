@@ -16,7 +16,7 @@ class ViewController: UIViewController ,  UITextFieldDelegate{
     var accountFound = false
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
+     
     
     override func viewDidLoad() {
         super.viewDidLoad()
